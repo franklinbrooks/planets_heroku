@@ -1,6 +1,6 @@
 # A New Yorker's Guide to Scale in the Solar System
 
-While I was researching my first project ('Save Our Satellites' game) at GA, I first thought of the incredible displays at The Rose Center for Earth and Space is a part of the American Museum of Natural History. Also, I came across a number of really cool JavaScript/CSS models of our solar system and other stellar imagery.  All of these are informative and fun, giving a good sense of the names and order of the planets, and their orbital paths and relative speeds.
+While I was researching my first project ('Save Our Satellites' game) at GA, I first thought of the incredible displays at The Rose Center for Earth and Space at the American Museum of Natural History. Also, I came across a number of really cool JavaScript/CSS models of our solar system and other stellar imagery.  All of these are informative and fun, giving a good sense of the names and order of the planets, and their orbital paths and relative speeds.
 
 BUT, there was one thing with which they all struggle: it's hard to convey a sense of the scale of the solar system.
 
@@ -78,8 +78,6 @@ Add additional notes about how to deploy this on a live system
 ## Author
 
 * **Franklin Brooks** - *Initial work* - [Franklin Christopher Brooks](https://github.com/franklinbrooks)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## Acknowledgments
 
