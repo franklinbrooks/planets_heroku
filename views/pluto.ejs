@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Local Scripts and Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="text/javascript"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="teal" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">A New Yorker's Guide to the Solar System</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/" class="light">Home</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center teal-text text-lighten-2"><%= title %></h1>
+          <div class="row center">
+            <h5 class="header col s12 light" style="color:white">The Planet That Is Not A Planet</h5>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="parallax"><img src="http://images-assets.nasa.gov/image/PIA19717/PIA19717~orig.jpg" alt="<%= title %> img 1" style="width:100%"></div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4> <%= title %> </h4>
+            <p class="flow-text left-align light">Pluto is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune. It was the first Kuiper belt object to be discovered.  Pluto was discovered by Clyde Tombaugh in 1930 and was originally considered to be the ninth planet from the Sun. After 1992, its planethood was questioned following the discovery of several objects of similar size in the Kuiper belt, which led the International Astronomical Union to define the term "planet" formally. That definition excluded Pluto and reclassified it as a dwarf planet.
+<br>
+<br>
+Like other Kuiper belt objects, Pluto is primarily made of ice and rock and is relatively small—about one-sixth the mass of the Moon and one-third its volume. Due to its elliptical orbit Pluto periodically comes closer to the Sun than Neptune, but a stable orbital resonance with Neptune prevents them from colliding. Light from the Sun takes about 5.5 hours to reach Pluto at its average distance, 39.5 times Earth’s distance from the Sun.
+<br>
+<br>
+Pluto has five known moons: Charon (the largest, with a diameter just over half that of Pluto), Styx, Nix, Kerberos, and Hydra. In September 2016, astronomers announced that the reddish-brown cap of the north pole of Charon is composed of tholins, organic macromolecules that may be ingredients for the emergence of life, and produced from methane, nitrogen and related gases released from the atmosphere of Pluto and transferred over about 19,000 km (12,000 mi) distance to the orbiting moon.
+<br>
+<br>
+On July 14, 2015, the New Horizons spacecraft became the first spacecraft to fly by Pluto. During its brief flyby, New Horizons made detailed measurements and observations of Pluto and its moons.  On October 25, 2016, at 05:48 pm ET, the last bit of data (of a total of 50 billion bits of data; or 6.25 gigabytes) was received from New Horizons from its close encounter with Pluto on July 14, 2015.
+
+<div>Source: https://en.wikipedia.org/wiki/Pluto</div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <h4 style="color:white"> <%= title %>: Stats</h4>
+          <div class="row center">
+            <h5 class="header col s12 light" style="color:white"></h5>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" alt="<%= title %> img 2" style="width:100%"></div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 m6">
+            <p class="flow-text left-align light">
+              Pluto orbits 5913 million miles from the Sun.
+              <br>
+              At our Manhattan scale, Pluto is 19.54 kilometers away from The Sphere.
+              <br>
+              In our journey across Manhattan, this puts us in Inwood, at Broadway and Dyckman Street, at the northern tip of Manhattan.
+              <br>
+              Pluto would be less than 1cm in size at this scale.
+              <br>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-panel teal">
+              <img  src="/images/Pluto_orbit.png" alt="Raduis of <%= title %>'s orbit at scale" style="width:100%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <br>
+            <br>
+            <h4 style="color:white"></h4>
+            <br>
+            <br>
+            <h5 class="header col s12 light" style="color:white"></h5>
+            </h5>
+            <br>
+            <h5 class="header col s12 light" style="color:white"></h5>
+          </div>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="parallax">
+        <iframe
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0"
+          src="https://www.google.com/maps/embed/v1/streetview
+          ?key=AIzaSyCcZNAYCeyfYq_jwr78VPpObxyFv7tXoaY
+          &location=40.7048849,-74.0154294
+          &heading=210
+          &pitch=10
+          &fov=35"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <p class="flow-text light">And on to the nearest star.
+            </p>
+            <div class="row center">
+              <a href="/proxima_centauri" class="btn-large waves-effect waves-light teal lighten-1">Next: PROXIMA CENTAURI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text">Sources</h5>
+            <p class="grey-text text-lighten-4">"A New Yorker's Guide to the Solar System" was conceived as a showcase for web technologies explored under the Web Development Immersive at General Assembly NYC in February 2017. Several of these are linked here.</p>
+            <p class="grey-text text-lighten-4">All images from NASA's Jet Propulsion Laboratory and Google fair use searches.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>Developed by <a class="brown-text text-lighten-3" href="https://github.com/franklinbrooks">Franklin Brooks</a>. Created with
+            <span class="heart">♥
+            </span> at
+            <span><a  class="brown-text text-lighten-3" href="http://www.generalassemb.ly">GA</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://www.materializecss.com/bin/materialize.js"></script>
+    <script src="http://www.materializecss.com/js/init.js"></script>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  </body>
+</html>

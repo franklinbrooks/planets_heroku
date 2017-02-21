@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Local Scripts and Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="text/javascript"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="teal" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">A New Yorker's Guide to the Solar System</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/" class="light">Home</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center teal-text text-lighten-2"><%= title %></h1>
+          <div class="row center">
+            <h5 class="header col s12 light" style="color:white">An average star.</h5>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="parallax"><img src="https://images-assets.nasa.gov/image/PIA18906/PIA18906~orig.jpg" alt="Sun img 1" style="width:100%"></div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>The Sun</h4>
+            <p class="flow-text left-align light">The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process.
+              <br>
+              <br>
+              The Sun accounts for about 99.86% of the total mass of the Solar System. About three quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron.
+              <br>
+              <br>
+              The Sun formed approximately 4.6 billion years ago from the gravitational collapse of matter within a region of a large molecular cloud. Most of this matter gathered in the center, whereas the rest flattened into an orbiting disk that became the Solar System. The central mass became so hot and dense that it eventually initiated nuclear fusion in its core. It is thought that almost all stars form by this process.
+              <br>
+              <br>
+              The Sun is roughly middle-aged; it has not changed dramatically for more than four billion years, and will remain fairly stable for more than another five billion years. After hydrogen fusion in its core has diminished to the point at which it is no longer in hydrostatic equilibrium, the core of the Sun will experience a marked increase in density and temperature while its outer layers expand to eventually become a red giant. It is calculated that the Sun will become sufficiently large enough to engulf the current orbits of Mercury, Venus, and probably Earth.
+              <br>
+              <br>
+            <div>Source: https://en.wikipedia.org/wiki/Sun</div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <h4 style="color:white">The Sun: Stats</h4>
+          <div class="row center">
+            <h5 class="header col s12 light" style="color:white"></h5>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="http://images-assets.nasa.gov/image/PIA17669/PIA17669~orig.jpg" alt="The Sun img 2" style="width:100%"></div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <!--   Icon Section   -->
+        <div class="row">
+          <h3>Our Manhattan stand-in for The Sun:<br><b>The Sphere</b></h3>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img src="http://farm4.static.flickr.com/3651/3292065238_fccddf3aac_o.jpg" style="max-width:100%">
+              <h5 class="center">A Survivor</h5>
+              <p class="light"><a href="http://feelingkeep.com/article/the-sphere-before-and-after-the-attacks-of-september-11-2001" target="new" >The Sphere </a> is a 1971 sculpture by German artist Fritz Koenig that was an origial part of the World Trade Center concourse.
+                <br>
+                It was the only outdoor sculpture to survive the attacks of September 11, 2001.
+              </p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img src="http://commondatastorage.googleapis.com/static.panoramio.com/photos/original/31320348.jpg"  style="max-width:100%">
+              <h5 class="center">An Eternal Flame</h5>
+              <p class="light">Today, it has been relocated to Battery Park, at the southern tip of Manhattan. In memory of those lost in the attacks, The Sphere is like the Sun, hosting an eternal flame.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img src="http://static.panoramio.com/photos/original/42299738.jpg" style="max-width:100%; max-height:50%">
+              <h5 class="center">A scaled-down Sun</h5>
+              <p class="light">The Sphere measures <b>4.6 meters</b> in diameter.
+                <br>
+                We will use "The Sphere" as a point of reference.  It will act as a stand-in for our Sun.
+                We will measure all distances across NYC, and our solar system, from here.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+            <br>
+            <br>
+            <h4 style="color:white">The Sphere as our Sun</h4>
+            <br>
+            <br>
+            <h5 class="header col s12 light" style="color:white">Now with a sense of the size of our reference "Sun," we can begin to compare distances across Manhattan relative to The Sphere.</h5>
+            </h5>
+            <br>
+            <h5 class="header col s12 light" style="color:white">We leave The Sphere and Battery Park and travel north up Broadway to our first planet.</h5>
+          </div>
+          <br>
+          <br>
+          <div class="row center">
+            <a href="/mercury" class="btn-large waves-effect waves-light teal lighten-1">Next: MERCURY</a>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="parallax"><img src="http://commondatastorage.googleapis.com/static.panoramio.com/photos/original/31320348.jpg" alt="The Sphere sculpture" style="width:100%"></div>
+    </div>
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text">Sources</h5>
+            <p class="grey-text text-lighten-4">"A New Yorker's Guide to the Solar System" was conceived as a showcase for web technologies explored under the Web Development Immersive at General Assembly NYC in February 2017. Several of these are linked here.</p>
+            <p class="grey-text text-lighten-4">All images from NASA's Jet Propulsion Laboratory and Google fair use searches.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>Developed by <a class="brown-text text-lighten-3" href="https://github.com/franklinbrooks">Franklin Brooks</a>. Created with
+            <span class="heart">♥
+            </span> at
+            <span><a  class="brown-text text-lighten-3" href="http://www.generalassemb.ly">GA</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://www.materializecss.com/bin/materialize.js"></script>
+    <script src="http://www.materializecss.com/js/init.js"></script>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  </body>
+</html>

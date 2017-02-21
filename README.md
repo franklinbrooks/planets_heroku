@@ -13,7 +13,7 @@ This web project is a thought experiment that seeks to let the user appreciate t
 
 #### [Link to Live Site](https://pacific-savannah-99868.herokuapp.com/)  
 #### [Link to Repo](https://github.com/franklinbrooks/Planets)  
-#### [Link to ZenHub](https://github.com/franklinbrooks/Joes-Cocktail-Confections/issues/1#boards?repos=80679483)  
+#### [Link to ZenHub](https://github.com/franklinbrooks/Planets#boards?repos=82419944)  
 
 ## Getting Started
 
@@ -44,26 +44,6 @@ until finished
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 

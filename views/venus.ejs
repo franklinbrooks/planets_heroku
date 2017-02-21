@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Local Scripts and Styles -->
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="text/javascript"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="teal" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">A New Yorker's Guide to the Solar System</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/" class="light">Home</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center teal-text text-lighten-2"><%= title %></h1>
+          <div class="row center">
+            <h5 class="header col s12 light" style="color:white">Our Sister Planet</h5>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="parallax"><img src="https://images-assets.nasa.gov/image/PIA00111/PIA00111~orig.jpg" alt="Venus img 1" style="width:100%"></div>
+    </div>
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <h3><i class="mdi-content-send brown-text"></i></h3>
+            <h4>Venus</h4>
+            <p class="flow-text left-align light">Venus is the second planet from the Sun, orbiting it every 224.7 Earth days.  It has the longest rotation period (243 days) of any planet in the Solar System and rotates in the opposite direction to most other planets. It has no natural satellite. It is named after the Roman goddess of love and beauty. It is the second-brightest natural object in the night sky after the Moon.
+<br>
+<br>
+Venus is a terrestrial planet and is sometimes called Earth's "sister planet" because of their similar size, mass, proximity to the Sun, and bulk composition. It is radically different from Earth in other respects. It has the densest atmosphere of the four terrestrial planets, consisting of more than 96% carbon dioxide. The atmospheric pressure at the planet's surface is 92 times that of Earth, or roughly the pressure found 900 m (3,000 ft) underwater on Earth. Venus is by far the hottest planet in the Solar System, with a mean surface temperature of 735 K (462 °C; 863 °F), even though Mercury is closer to the Sun. Venus is shrouded by an opaque layer of highly reflective clouds of sulfuric acid.  It may have had water oceans in the past, but these would have vaporized as the temperature rose due to a runaway greenhouse effect. Venus lacks a magnetic field, and its surface is a dry desertscape interspersed with slab-like rocks and is periodically resurfaced by volcanism.
+<br>
+<br>
+Venus was the first planet beyond Earth visited by a spacecraft (Mariner 2) in 1962, and the first to be successfully landed on (by Venera 7) in 1970. Venus's thick clouds render observation of its surface impossible in visible light, and the first detailed maps did not emerge until the arrival of the Magellan orbiter in 1991. Plans have been proposed for rovers or more complex missions, but they are hindered by Venus's hostile surface conditions.<br>
+          <br>
+            <div>Source: https://en.wikipedia.org/wiki/Venus</div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <h4 style="color:white">Venus: Stats</h4>
+          <div class="row center">
+            <h5 class="header col s12 light" style="color:white"></h5>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Venus-real_color.jpg" alt="Venus img 2" style="width:100%"></div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+
+        <div class="row">
+          <div class="col s12 m6">
+            <p class="flow-text left-align light">
+              Venus orbits 108 million miles from the Sun.
+              <br>
+              At our Manhattan scale, Venus is 356.96 meters away from The Sphere.
+              <br>
+              In our journey across Manhattan, this puts us on Broadway, just in front of the famous Charging Bull Sculpture.
+              <br>
+              Venus would be about 3.7cm in size at this scale.
+            </p>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-panel teal">
+              <img src="/images/venus_orbit.png" alt="Raduis of Venus's orbit at scale" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center">
+
+            <iframe width="1500" height="600"
+
+            src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyDfAGnOqYibVPXpe7LrNnLQrIA7VY1gFh8&location=40.7056617,-74.0133583&heading=0&pitch=5&fov=90">
+            </iframe>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <div class="row">
+          <div class="col s12 center">
+            <p class="flow-text light">Next, we travel home. To Earth.
+            </p>
+          <div class="row center">
+            <a href="/earth" class="btn-large waves-effect waves-light teal lighten-1">Next: EARTH</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text">Sources</h5>
+            <p class="grey-text text-lighten-4">"A New Yorker's Guide to the Solar System" was conceived as a showcase for web technologies explored under the Web Development Immersive at General Assembly NYC in February 2017. Several of these are linked here.</p>
+            <p class="grey-text text-lighten-4">All images from NASA's Jet Propulsion Laboratory and Google fair use searches.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>Developed by <a class="brown-text text-lighten-3" href="https://github.com/franklinbrooks">Franklin Brooks</a>. Created with
+            <span class="heart">♥
+            </span> at
+            <span><a  class="brown-text text-lighten-3" href="http://www.generalassemb.ly">GA</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://www.materializecss.com/bin/materialize.js"></script>
+    <script src="http://www.materializecss.com/js/init.js"></script>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  </body>
+</html>
