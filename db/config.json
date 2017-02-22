@@ -1,0 +1,21 @@
+{
+  "development": {
+    "password": null,
+    "database": "planets_app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "password": null,
+    "database": "planets_app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "password": null,
+    "database": "planets_app",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

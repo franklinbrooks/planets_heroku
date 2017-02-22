@@ -85,22 +85,7 @@ router.get('/proxima_centauri', function(req, res, next) {
   });
 });
 
-router.get('/planets', function(req, res, next) {  // main route
-  //username variable set to null to allow for conditional rendering of header
-  let username = null;
-  if (req.user) {
-    username=req.user.username;
-  }
-  // grabbing from Products table where route = cupcakes
- models.Planet.findAll({
-    where: { category: "Planets"}
-  }).then(function(planet){
-    res.render('Planets/planet', {
-      title: "Cupcakes - Joe's Cocktail Confections",
-      cupcakes: cupcakes,
-      username:username
-    });
-  });
-});
+
 
 module.exports = router;
+

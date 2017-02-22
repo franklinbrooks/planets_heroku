@@ -13,8 +13,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
   <!-- Local Scripts and Styles -->
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="/javascripts/app.js" type="text/javascript"></script>
 
   <!-- Axios -->
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -66,14 +66,18 @@
             <h2 class="center brown-text"><i class="material-icons">wb_sunny</i></h2>
             <h5 class="center">The Rose Center</h5>
             <p class="light">If you are lucky enough to visit New York City's amazing <a href="http://www.amnh.org/exhibitions/permanent-exhibitions/rose-center-for-earth-and-space/" target="new" >Rose Center for Earth and Space at the American Museum of Natural History</a>, their displays give a great sense of the relative sizes of the planets in our solar system.</p>
-            <img src="http://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/permanent-exhibitions/rose-center-for-earth-and-space/rose-center-for-earth-and-space/146117-1-eng-US/rose-center-for-earth-and-space_imagelarge.jpg" style="max-width:100%">
+            <div class="materialboxed" data-caption="The Rose Center at AMNH in New York City.">
+              <img src="http://www.amnh.org/var/ezflow_site/storage/images/media/amnh/images/permanent-exhibitions/rose-center-for-earth-and-space/rose-center-for-earth-and-space/146117-1-eng-US/rose-center-for-earth-and-space_imagelarge.jpg" style="max-width:100%">
+            </div>
           </div>
         </div>
 
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">public</i></h2>
-            <img src="https://newze.net/wp-content/uploads/2017/01/68.media_.tumblr.comtumblr_okgk33YULC1qio57co-b77f917762650c424c56cbb7e3562331cc88f45d.jpg"  style="max-width:100%">
+            <div class="materialboxed" data-caption="The planets are to scale, but not the distances between them.">
+              <img src="https://newze.net/wp-content/uploads/2017/01/68.media_.tumblr.comtumblr_okgk33YULC1qio57co-b77f917762650c424c56cbb7e3562331cc88f45d.jpg"  style="max-width:100%">
+            </div>
             <h5 class="center">But, <i>distance?</i></h5>
             <p class="light">Even with its expansive glass atrium, the Rose Center simply does not have the space required to give New Yorkers a sense of the true distances between the planets in the solar system.</p>
           </div>
@@ -84,7 +88,9 @@
             <h2 class="center brown-text"><i class="material-icons">location_city</i></h2>
             <h5 class="center">Explore the planets on a New York City scale</h5>
             <p class="light">To explore the space separating our neighboring planets, we'll need to step outside onto the streets of Manhattan...</p>
-            <img src="http://cdn.archinect.net/images/1200x/b2/b2248r4ig1jaysa2.jpg" style="max-width:100%; max-height:50%">
+            <div class="materialboxed" data-caption="We'll use the island of Manhattan to depict planetary distances.">
+              <img src="http://cdn.archinect.net/images/1200x/b2/b2248r4ig1jaysa2.jpg" style="max-width:100%; max-height:50%">
+            </div>
           </div>
         </div>
       </div>
@@ -144,7 +150,7 @@
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l5 s12">
           <h5 class="white-text">About this project</h5>
           <p class="grey-text text-lighten-4">"A New Yorker's Guide to the Solar System" was conceived as a showcase for web technologies explored under the Web Development Immersive at General Assembly NYC in February 2017. Several of these are linked here.</p>
           <p class="grey-text text-lighten-4">All images from NASA's Jet Propulsion Laboratory and Google fair use searches.</p>
@@ -165,12 +171,12 @@
             <li><a class="white-text" href="https://material.io/icons/" target="new" >Material Icons</a></li>
           </ul>
         </div>
-        <div class="col l2 s12">
+        <div class="col l3 s12">
           <h5 class="white-text">DB</h5>
           <ul>
             <li><a class="white-text" href="https://www.postgresql.org/" target="new" >Postgres</a></li>
             <li><a class="white-text" href="http://docs.sequelizejs.com/en/v3/" target="new" >Sequelize</a></li>
-            <li><a class="white-text" href="https://developers.google.com/maps/documentation/embed/guide#street_view_mode" target="new" >Google Maps Embed</a></li>
+            <li><a class="white-text" href="https://developers.google.com/maps/documentation/embed/guide#street_view_mode" target="new" >GoogleMaps Embed</a></li>
           </ul>
         </div>
       </div>

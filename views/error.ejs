@@ -1,3 +1,78 @@
-<h1><%= message %></h1>
-<h2><%= error.status %></h2>
-<pre><%= error.stack %></pre>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= title %></title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <!-- Local Scripts and Styles -->
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/app.js" type="text/javascript"></script>
+    <!-- Axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <nav class="teal" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="/" class="brand-logo">A New Yorker's Guide to the Solar System</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/" class="light">Home</a></li>
+        </ul>
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="#">Home</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <div class="container">
+      <main>
+
+        <h1>Whoops!</h1>
+        <br>
+        <p>The Solar System is huge. Our site, not so much.</p>
+        <br>
+        <p>The page you requested was not found on this server</p>
+        <br>
+        <p>Sorry about that.</p>
+        <br>
+        <button type="button" class="btn-large waves-effect waves-light teal lighten-1" onclick="javascript:history.back()">Back</button>
+        <br>
+        <br>
+      </main>
+    </div>
+
+  <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text">Sources</h5>
+            <p class="grey-text text-lighten-4">"A New Yorker's Guide to the Solar System" was conceived as a showcase for web technologies explored under the Web Development Immersive at General Assembly NYC in February 2017. Several of these are linked here.</p>
+            <p class="grey-text text-lighten-4">All images from NASA's Jet Propulsion Laboratory and Google fair use searches.</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>Developed by <a class="brown-text text-lighten-3" href="https://github.com/franklinbrooks">Franklin Brooks</a>. Created with
+            <span class="heart">♥
+            </span> at
+            <span><a  class="brown-text text-lighten-3" href="http://www.generalassemb.ly">GA</a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://www.materializecss.com/bin/materialize.js"></script>
+    <script src="http://www.materializecss.com/js/init.js"></script>
+    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
+  </body>
+</html>
