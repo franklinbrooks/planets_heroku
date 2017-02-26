@@ -2,16 +2,22 @@
 module.exports = {
   up: function(queryInterface, Sequelize) {
     return queryInterface.createTable('Planets', {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER
+      },
       name: {
         type: Sequelize.STRING(255)
       },
-      orbit_size: {
+      density: {
         type: Sequelize.STRING(255)
       },
       orbital_period: {
         type: Sequelize.STRING(255)
       },
-      circumference: {
+      gravity: {
         type: Sequelize.STRING(255)
       },
       mass: {
@@ -20,7 +26,10 @@ module.exports = {
       length_of_day: {
         type: Sequelize.STRING(255)
       },
-      mean_temperature: {
+      temperature: {
+        type: Sequelize.STRING(255)
+      },
+      distance: {
         type: Sequelize.STRING(255)
       }
     });

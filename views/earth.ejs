@@ -15,6 +15,8 @@
     <script src="/javascripts/app.js" type="text/javascript"></script>
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- A-Frame -->
+    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   </head>
@@ -103,16 +105,25 @@ About 71% of Earth's surface is covered with water, mostly by its oceans. The re
         </div>
       </div>
     </div>
-     <div class="parallax-container">
-       <div class="section no-pad-bot">
-        <div class="container">
-        <iframe width="100%" height="400"
 
+    <div style="position:relative;height:400px;width:80%;margin:0 auto">
+
+      <iframe width="100%" height="400"
         src="https://www.google.com/maps/embed/v1/streetview?key=<%= process.env.GOOGLE_KEY %>&location=40.7067316,-74.0125597&heading=45&pitch=5&fov=100">
-        </iframe>
-        </div>
+      </iframe>
+
+      <div style="width:900px;height:400px;z-index:2;position:absolute;top:0px">
+        <a-scene embedded style="left:250;height:300;width:400">
+          <a-sphere position="0 1.8 -1" radius=".01" color="#727ba3"></a-sphere>
+        </a-scene>
       </div>
+
     </div>
+
+    <div class="container section no-pad-bot">
+      <p style="text-align:center">Earth is the blue planet, 4cm in size, orbiting in the trees above Broadway in the Financial District. (Use arrow keys / mouse to pan / zoom)</p>
+    </div>
+
     <div class="container">
       <div class="section">
         <div class="row">
