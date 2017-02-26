@@ -23,6 +23,26 @@ router.get('/mercury', function(req, res, next) {
   });
 });
 
+/* GET Mercury page with DB */
+/*router.get('/mercury', function(req, res, next) {
+  models.Planet.findById(1).then(function(planet) {
+    res.render('mercury',
+    { planet: planet,
+      title: "Mercury"
+    });
+    console.log(planet.name);
+  });
+});*/
+
+/*const callDatabase = require('../public/javascripts/app.js');
+
+router.get('/mercury', callDatabase.getPlanet, (req, res, next) => {
+  res.render('mercury', {
+    planet: req.planet.dataValues,
+    title: "Mercury"
+  });
+});*/
+
 /* GET Venus page. */
 router.get('/venus', function(req, res, next) {
   res.render('venus', {

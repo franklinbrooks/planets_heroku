@@ -1,52 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><%= title %></title>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-  <!-- Compiled and minified CSS -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-  <!-- Local Scripts and Styles -->
-  <link rel="stylesheet" href="/stylesheets/style.css">
-  <script src="/javascripts/app.js" type="text/javascript"></script>
-
-  <!-- Axios -->
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-
+<% include head.ejs %>
 <body>
-  <nav class="teal" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">
-
-        <div class='wrapper' style="display:inline-block;">
-          <div class='orbit'>
-            <div class='planet'>
-              <div class='moon'>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      A New Yorker's Guide to the Solar System</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/">Home</a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="/">Home</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<% include header.ejs %>
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -59,13 +13,12 @@
         <div class="row center">
           <a href="#start" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">START THE TOUR</a>
         </div>
-        <br><br>
-
+        <br>
+        <br>
       </div>
     </div>
     <div class="parallax"><img src="https://images-assets.nasa.gov/image/PIA00545/PIA00545~orig.jpg" alt="Solar system img 1" style="width:100%"></div>
   </div>
-
 
   <div class="container">
     <div class="section">
@@ -204,7 +157,6 @@
       </div>
     </div>
   </footer>
-
 
             <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
