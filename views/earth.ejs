@@ -35,18 +35,27 @@ About 71% of Earth's surface is covered with water, mostly by its oceans. The re
         </div>
       </div>
     </div>
+
+
     <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
         <div class="container">
           <h4 style="color:white">Earth: Stats</h4>
-          <div class="row center">
-            <h5 class="header col s12 light" style="color:white"></h5>
-            </h5>
+          <p><i>How far away is our moon?</i></p>
+          <p>The moon is roughly 30 times Earth's diameter away.</p>
+          <div class="input-field inline">Enter how many kilometers you commute each day on Earth:
+          <br>
+          <br>
+          <form>
+          <input class="input" type="text" name="distance" placeholder="Distance" required >
           </div>
+          <button class="waves-effect waves-light btn" onclick="distanceOnEarth(<%= planet.gravity %>)">SUBMIT</button>
+          </form>
+          <p id="earthAnswer">&nbsp;</p>
         </div>
-      </div>
       <div class="parallax"><img src="https://images-assets.nasa.gov/image/as11-44-6549/as11-44-6549~orig.jpg" alt="Earth img 2" style="width:100%"></div>
     </div>
+
+
     <div class="container">
       <div class="section">
         <div class="row">

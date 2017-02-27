@@ -35,17 +35,25 @@ Jupiter has been explored on several occasions by robotic spacecraft, most notab
       </div>
     </div>
     <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
         <div class="container">
           <h4 style="color:white">Jupiter: Stats</h4>
-          <div class="row center">
-            <h5 class="header col s12 light" style="color:white"></h5>
-            </h5>
+          <p><i>How much would you weigh on Jupiter?</i></p>
+          <p>Gravity on Jupiter is the highest of any planet in the Solar System.</p>
+          <div class="input-field inline">Enter your weight on Earth:
+          <br>
+          <br>
+          <br>
+          <form>
+          <input class="input" type="text" name="weight" placeholder="Weight" required >
           </div>
+          <button class="waves-effect waves-light btn" onclick="weightOnJupiter(<%= planet.gravity %>)">SUBMIT</button>
+          </form>
+          <p id="jupiterAnswer">&nbsp;</p>
         </div>
-      </div>
       <div class="parallax"><img src="http://images-assets.nasa.gov/image/PIA02852/PIA02852~orig.jpg" alt="Jupiter img 2" style="width:100%"></div>
     </div>
+
+
     <div class="container">
       <div class="section">
         <div class="row">

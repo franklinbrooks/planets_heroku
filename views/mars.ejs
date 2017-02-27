@@ -34,19 +34,27 @@ There are ongoing investigations assessing the past habitability potential of Ma
         </div>
       </div>
     </div>
+
+
     <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
         <div class="container">
           <h4 style="color:white">Mars: Stats</h4>
           <p><i>How much would you weigh on Mars?</i></p>
-          <p>A year on Mars is a fraction of an Earth year.</p>
-          <p>Enter your age on Earth:
-          <input type="text" name="age"> </p><button>SUBMIT</button>
-          <p>On Mercury, you would be (mercuryYears) years old!</p>
+          <p>Gravity on Mars is the lowest of any planet in the Solar System.</p>
+          <div class="input-field inline">Enter your weight on Earth:
+          <br>
+          <br>
+          <form>
+          <input class="input" type="text" name="weight" placeholder="Weight" required >
+          </div>
+          <button class="waves-effect waves-light btn" onclick="weightOnMars(<%= planet.gravity %>)">SUBMIT</button>
+          </form>
+          <p id="marsAnswer">&nbsp;</p>
         </div>
-      </div>
       <div class="parallax"><img src="http://imgsrc.hubblesite.org/hu/db/images/hs-2005-34-j-full_jpg.jpg" alt="Mars img 2" style="width:100%"></div>
     </div>
+
+
     <div class="container">
       <div class="section">
         <div class="row">
@@ -76,14 +84,14 @@ There are ongoing investigations assessing the past habitability potential of Ma
 
       <div style="width:900px;height:400px;z-index:2;position:absolute;top:0px">
         <a-scene embedded style="left:250;height:300;width:400">
-          <a-sphere position="0 1.8 -1" radius=".01" color="#e58c5d"></a-sphere>
+          <a-sphere position="0 1.2 -1" radius=".008" color="#e58c5d"></a-sphere>
         </a-scene>
       </div>
 
     </div>
 
     <div class="container section no-pad-bot">
-      <p style="text-align:center">Mars is the red planet, 3cm in size, above Broadway near Zuccotti Park. (Use arrow keys / mouse to pan / zoom)</p>
+      <p style="text-align:center">Mars is the red planet, 2.3cm in size, above Broadway near Zuccotti Park. (Use arrow keys / mouse to pan / zoom)</p>
     </div>
 
     <div class="container">

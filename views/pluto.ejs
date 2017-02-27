@@ -70,18 +70,25 @@ On July 14, 2015, the New Horizons spacecraft became the first spacecraft to fly
         </div>
       </div>
     </div>
+
     <div class="parallax-container valign-wrapper">
-      <div class="section no-pad-bot">
         <div class="container">
-          <h4 style="color:white"> <%= title %>: Stats</h4>
-          <div class="row center">
-            <h5 class="header col s12 light" style="color:white"></h5>
-            </h5>
+          <h4 style="color:white">Pluto: Stats</h4>
+          <p><i>How much would you weigh on Mars?</i></p>
+          <p>Gravity on Mars is the lowest of any planet in the Solar System.</p>
+          <div class="input-field inline">Enter your weight on Earth:
+          <br>
+          <br>
+          <form>
+          <input class="input" type="text" name="weight" placeholder="Weight" required >
           </div>
+          <button class="waves-effect waves-light btn" onclick="weightOnMars(<%= planet.gravity %>)">SUBMIT</button>
+          </form>
+          <p id="marsAnswer">&nbsp;</p>
         </div>
-      </div>
       <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Nh-pluto-in-true-color_2x_JPEG-edit-frame.jpg" alt="<%= title %> img 2" style="width:100%"></div>
     </div>
+
     <div class="container">
       <div class="section">
         <div class="row">

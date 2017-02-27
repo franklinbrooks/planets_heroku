@@ -45,7 +45,7 @@ p {
   margin: 0 auto;
   /* border: 4px solid #4b9cdb; */
   border-radius: 100%;
-  animation: orbitalPath 4s linear infinite;
+  animation: orbitalPath 5s linear infinite;
 }
 .planet {
   position: absolute;
@@ -55,7 +55,7 @@ p {
   border-radius: 100%;
   top: -10px;
   left: 0px;
-  animation: orbitalPath 2s linear infinite;
+  animation: orbitalPath 5s linear infinite;
 }
 .moon {
   position: absolute;
@@ -65,7 +65,7 @@ p {
   border-radius: 100%;
   top: -15px;
   left: 0px;
-  animation: anotherPath 3s linear infinite;
+  animation: anotherPath 5s linear infinite;
 }
 @keyframes orbitalPath {
   100%  {  transform: rotate(360deg); }
