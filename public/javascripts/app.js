@@ -49,14 +49,13 @@ function weightOnJupiter(gravity) {
   target.innerHTML=`With Jupiter's gravity ${gravity} times that on Earth, your weight on Jupiter would be ${newWeight}!`
 }
 
-
-function ageOnNeptune() {
-  alert("ageOnNeptune!");
+function ageOnNeptune(year) {
+  event.preventDefault();
+  let userAge = document.querySelector('input').value;
+  userAge = parseInt(userAge);
+  let newAge = 163.7;
+  newAge = year / userAge;
+  let target = document.getElementById("neptuneAnswer");
+  target.innerHTML=`With Neptune's year ${year} times that on Earth, your age on Neptune would only be ${newAge}!`
 }
 
-
-/* Exporting functions */
-/*module.exports = {
-  ageOnMercury,
-  ageOnNeptune
-}*/
