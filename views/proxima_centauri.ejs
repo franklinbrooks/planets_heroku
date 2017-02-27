@@ -33,18 +33,9 @@ On August 24, 2016, the European Southern Observatory announced the discovery of
     </div>
     <div class="parallax-container valign-wrapper">
         <div class="container">
-          <h4 style="color:white">Proxima Centauri: Stats</h4>
-          <p><i>How much would you weigh on Mars?</i></p>
-          <p>Gravity on Mars is the lowest of any planet in the Solar System.</p>
-          <div class="input-field inline">Enter your weight on Earth:
-          <br>
-          <br>
-          <form>
-          <input class="input" type="text" name="weight" placeholder="Weight" required >
-          </div>
-          <button class="waves-effect waves-light btn" onclick="weightOnMars(<%= planet.gravity %>)">SUBMIT</button>
-          </form>
-          <p id="marsAnswer">&nbsp;</p>
+          <h4 style="color:white"><%= title %> Stats</h4>
+          <p><i>Proxima Centauri, the closest star to our own, is still 40,208,000,000,000 km away.</i></p>
+          <p>This is about 268,770 times the distance from the Earth to the Sun.</p>
         </div>
       <div class="parallax"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/New_shot_of_Proxima_Centauri%2C_our_nearest_neighbour.jpg" alt="<%= title %> img 2" style="width:100%"></div>
     </div>
@@ -104,6 +95,5 @@ On August 24, 2016, the European Southern Observatory announced the discovery of
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="http://www.materializecss.com/bin/materialize.js"></script>
     <script src="http://www.materializecss.com/js/init.js"></script>
-    <script src="https://darkskyapp.github.io/skycons/skycons.js"></script>
   </body>
 </html>
